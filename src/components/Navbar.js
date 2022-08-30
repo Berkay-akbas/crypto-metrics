@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import '../styles/Navbar.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronLeft,
@@ -22,7 +23,9 @@ const Navbar = () => {
         <h1 className="title">Crypto Metrics</h1>
         <ul className="holder">
           <li className="lefts">
-            <FontAwesomeIcon icon={faChevronLeft} className="fontawesome" />
+            <Link to="/" className="link">
+              <FontAwesomeIcon icon={faChevronLeft} className="fontawesome" />
+            </Link>
           </li>
           <li className="center">
             <input

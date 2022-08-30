@@ -4,6 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-y: auto;
+
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .title {
