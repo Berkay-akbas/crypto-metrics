@@ -1,7 +1,7 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+/* eslint-disable */
 const CryptoItem = (props) => {
   const {
     id,
@@ -13,15 +13,18 @@ const CryptoItem = (props) => {
     total_volume,
     price_change_percentage_24h,
   } = props;
-
+  /* eslint-enable */
   return (
     <div className="coin-item">
       <FontAwesomeIcon icon={faCircleArrowRight} className="circle-arrow" />
       <img src={image} alt={name} className="coin-image" />
-
       <div className="coin-info">
         <div className="coin-name">{name}</div>
-        <div className="coin-price">{current_price} $</div>
+        <div className="coin-price">
+          {current_price}
+          {' '}
+          $
+        </div>
       </div>
     </div>
   );

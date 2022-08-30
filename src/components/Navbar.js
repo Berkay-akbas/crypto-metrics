@@ -1,11 +1,13 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { searchCoins } from "../redux/cryptos";
-import "../styles/Navbar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { faGear } from "@fortawesome/free-solid-svg-icons";
-import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import '../styles/Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faChevronLeft,
+  faGear,
+  faMicrophone,
+} from '@fortawesome/free-solid-svg-icons';
+import { searchCoins } from '../redux/cryptos';
 
 const Navbar = () => {
   const dispatch = useDispatch();

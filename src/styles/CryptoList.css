@@ -4,29 +4,6 @@
 .coins-holder {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* padding: 1rem 1rem; */
-}
-
-.coin-item:nth-child(1) {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-  /* padding: 3rem; */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.coin-item:nth-child(1)::after {
-  content: "RANKED BY MARKET CAP";
-  text-align: left;
-  background-color: #fff;
-  width: 100%;
-  background-color: rgb(223, 70, 131);
-  color: #fff;
-  padding: 0.3rem 0rem 0.3rem 1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
 }
 
 .coin-item {
@@ -38,6 +15,26 @@
   height: 100%;
   width: 100%;
   padding-top: 1.5rem;
+}
+
+.coin-item:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.coin-item:nth-child(1)::after {
+  content: "RANKED BY MARKET CAP";
+  text-align: left;
+  width: 100%;
+  background-color: rgb(223, 70, 131);
+  color: #fff;
+  padding: 0.3rem 0 0.3rem 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .circle-arrow {

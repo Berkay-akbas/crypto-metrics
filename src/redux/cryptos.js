@@ -1,5 +1,5 @@
-const ADDED_COINS = "crypto-metrics/src/redux/ADDED_COINS";
-const SEARCH_COINS = "crypto-metrics/src/redux/SEARCH_COINS";
+const ADDED_COINS = 'crypto-metrics/src/redux/ADDED_COINS';
+const SEARCH_COINS = 'crypto-metrics/src/redux/SEARCH_COINS';
 
 const initialState = {
   coins: [],
@@ -15,13 +15,11 @@ const coinReducer = (state = initialState, action) => {
       };
     case SEARCH_COINS:
       /* eslint-disable no-case-declarations */
-      const filteredCoins = state.coins.filter((coin) =>
-        coin.name.toLowerCase().includes(action.payload.toLowerCase())
-      );
+      const filteredCoins = state.coins.filter((coin) => coin.name.toLowerCase().includes(action.payload.toLowerCase()));
 
       return {
         ...state,
-        filtered: action.payload === "" ? [] : filteredCoins,
+        filtered: action.payload === '' ? [] : filteredCoins,
       };
     default:
       return state;
@@ -42,7 +40,7 @@ export const searchCoins = (text) => ({
 
 export const fetchCoins = () => async (dispatch) => {
   const response = await fetch(
-    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=300&page=1&sparkline=false&price_change_percentage=24h"
+    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=300&page=1&sparkline=false&price_change_percentage=24h',
   );
   const data = await response.json();
   const coins = data.map((coin) => ({

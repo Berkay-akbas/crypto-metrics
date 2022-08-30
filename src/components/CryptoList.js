@@ -1,14 +1,13 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchCoins } from "../redux/cryptos";
-import CryptoItem from "./CryptoItem";
-import "../styles/CryptoList.css";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchCoins } from '../redux/cryptos';
+import CryptoItem from './CryptoItem';
+import '../styles/CryptoList.css';
 
 const CryptoList = () => {
   const dispatch = useDispatch();
   const coins = useSelector((state) => state.coins);
   const filtered = useSelector((state) => state.filtered);
-  const nope = useSelector((state) => state.nope);
 
   useEffect(() => {
     if (coins.length === 0) {
