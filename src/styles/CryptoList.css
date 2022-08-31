@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("http://fonts.cdnfonts.com/css/gill-sans");
 
+body {
+  background-color: rgb(252, 81, 147);
+}
+
 .coins-holder {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -15,6 +19,11 @@
   height: 100%;
   width: 100%;
   padding-top: 1.5rem;
+}
+
+.info-holder {
+  display: flex;
+  flex-direction: column;
 }
 
 .coin-item:nth-child(1) {
