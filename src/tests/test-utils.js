@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { render } from "@testing-library/react";
-import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
+import { render } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+// eslint-disable-next-line
 import { setupStore } from "./redux/configureStore";
 
 // eslint-disable-next-line import/prefer-default-export
@@ -13,7 +14,7 @@ export function renderWithProviders(
     // Automatically create a store instance if no store was passed in
     store = setupStore(preloadedState),
     ...renderOptions
-  } = {}
+  } = {},
 ) {
   function Wrapper({ children }) {
     return (

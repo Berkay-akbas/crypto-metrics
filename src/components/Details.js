@@ -1,15 +1,14 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
-import CryptoItem from "./CryptoItem";
-import "../styles/Details.css";
-import NumberFormat from "react-number-format";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
+import NumberFormat from 'react-number-format';
+import CryptoItem from './CryptoItem';
+import '../styles/Details.css';
 
 const Details = () => {
   const { state } = useLocation();
   const coins = useSelector((state) => state.coins);
   const coin = coins.filter((coin) => coin.id === state.id);
-  console.log(coin[0].price_change_percentage_24h);
   return (
     <>
       <CryptoItem
@@ -33,9 +32,9 @@ const Details = () => {
         <div className="stat-value">
           <NumberFormat
             value={coin[0].market_cap}
-            displayType={"text"}
-            thousandSeparator={true}
-            prefix={"$"}
+            displayType="text"
+            thousandSeparator
+            prefix="$"
           />
         </div>
       </div>
@@ -44,9 +43,9 @@ const Details = () => {
         <div className="stat-value">
           <NumberFormat
             value={coin[0].total_volume}
-            displayType={"text"}
-            thousandSeparator={true}
-            prefix={"$"}
+            displayType="text"
+            thousandSeparator
+            prefix="$"
           />
         </div>
       </div>
@@ -58,13 +57,13 @@ const Details = () => {
           style={{
             color:
               Math.sign(coin[0].price_change_percentage_24h) < 0
-                ? "red"
-                : "green",
+                ? 'red'
+                : 'green',
           }}
         >
           <NumberFormat
-            suffix={"%"}
-            displayType={"text"}
+            suffix="%"
+            displayType="text"
             value={coin[0].price_change_percentage_24h.toFixed(2)}
           />
         </div>
