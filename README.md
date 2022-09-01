@@ -26,9 +26,9 @@ For the live demo click [here](https://63101da901ad3a07f00ed7eb--heartfelt-trave
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone this repository with git clone`git@github.com:Berkay-akbas/space-travelers-hub` using your terminal or command line.
+- Clone this repository with git clone`git@github.com:Berkay-akbas/crypto-metrics` using your terminal or command line.
 - Change to the project directory by entering : <br>
-  `cd space-travelers-hub` in the terminal.
+  `cd crypto-metrics` in the terminal.
 
 ### Prerequisites
 
@@ -49,7 +49,6 @@ Such dependencies include webpack and linters checks, for which you have to eith
 
 ### Run tests for linterS and unit tests
 
-- `npx hint .`
 - `npx stylelint "**/*.scss"`
 - `npx eslint .`
 - `npm run test`
