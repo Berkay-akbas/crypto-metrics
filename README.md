@@ -1,6 +1,6 @@
 # Space Travelers Hub
 
-> A web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions using SpaceX API. Built with React and Redux.
+> A single page web application that list cryptocurrencies by the market cap. User can click on the coin to get more detailed stats. Built with React and Redux.
 
 ## Built With
 
@@ -72,3 +72,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+
