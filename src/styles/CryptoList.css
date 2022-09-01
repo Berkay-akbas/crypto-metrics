@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gill-sans");
+
+body {
+  background-color: rgb(252, 81, 147);
+}
+
+.coins-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.coin-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: end;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.info-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin-item:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.coin-item:nth-child(1)::after {
+  content: "RANKED BY MARKET CAP";
+  text-align: left;
+  width: 100%;
+  background-color: rgb(223, 70, 131);
+  color: #fff;
+  padding: 0.3rem 0 0.3rem 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.circle-arrow {
+  color: #fff;
+  font-size: 1.3rem;
+  align-self: flex-end;
+  margin-right: 5%;
+}
+
+.coin-image {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  align-self: center;
+}
+
+.coin-item:nth-child(4n),
+.coin-item:nth-child(4n - 1) {
+  background: rgb(207, 67, 120);
+}
+
+.coin-item:nth-child(4n - 2),
+.coin-item:nth-child(4n - 3) {
+  background: rgb(253, 82, 148);
+}
+
+.coin-info {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 5%;
+}

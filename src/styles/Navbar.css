@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.homeNav {
+  background-color: rgb(237, 76, 139);
+}
+
+.fontawesome {
+  font-size: 1rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+.rights {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lefts,
+.rights,
+.center {
+  display: flex;
+  flex: 1 1 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.search::placeholder {
+  font-family: "Lato", sans-serif;
+}
+
+.transcript {
+  position: absolute;
+  top: 4%;
+  left: 55%;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.btnDown {
+  color: black;
+}
