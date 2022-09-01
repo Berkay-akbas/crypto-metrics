@@ -1,4 +1,4 @@
-# Space Travelers Hub
+# Crypto Metrics
 
 > A single page web application that list cryptocurrencies by the market cap. User can click on the coin to get more detailed stats. Built with React and Redux.
 
@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-For the live demo click [here](https://space-travelers-hub-microverse.netlify.app/)
+For the live demo click [here](https://63101da901ad3a07f00ed7eb--heartfelt-travesseiro-a85e40.netlify.app/)
 
 ## Authors
 
