@@ -16,7 +16,6 @@ const coinReducer = (state = initialState, action) => {
     case SEARCH_COINS:
       /* eslint-disable no-case-declarations */
       const filteredCoins = state.coins.filter((coin) => coin.name.toLowerCase().includes(action.payload.toLowerCase()));
-
       return {
         ...state,
         filtered: action.payload === '' ? [] : filteredCoins,

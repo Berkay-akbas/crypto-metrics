@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <CryptoList /> */}
       <Routes>
         <Route path="/" element={<CryptoList />} />
         <Route path="/:id" element={<Details />} />

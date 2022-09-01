@@ -3,19 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-/* eslint-disable */
 const CryptoItem = (props) => {
   const {
-    id,
-    name,
-    image,
-    current_price,
-    market_cap,
-    market_cap_rank,
-    total_volume,
-    price_change_percentage_24h,
+    id, name, image, current_price,
   } = props;
-  /* eslint-enable */
   return (
     <div className="coin-item">
       <Link

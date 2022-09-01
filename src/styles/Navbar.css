@@ -4,11 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-y: auto;
-
-  /* hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .title {
@@ -64,4 +59,16 @@
 
 .search::placeholder {
   font-family: "Lato", sans-serif;
+}
+
+.transcript {
+  position: absolute;
+  top: 4%;
+  left: 55%;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.btnDown {
+  color: black;
 }

@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import '../styles/Navbar.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faChevronLeft,
-  faGear,
-  faMicrophone,
-} from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faGear } from '@fortawesome/free-solid-svg-icons';
 import { searchCoins } from '../redux/cryptos';
+import Dictaphone from './Textvoice';
 
 const Navbar = () => {
+  /* eslint-disable-next-line */
+  const [message, setMessage] = useState("");
   const dispatch = useDispatch();
-
   const onChangeHandler = (e) => {
     dispatch(searchCoins(e.target.value));
+  };
+
+  const onClickHandler = () => {
+    dispatch(searchCoins(''));
+    setMessage('');
   };
 
   return (
@@ -24,7 +27,11 @@ const Navbar = () => {
         <ul className="holder">
           <li className="lefts">
             <Link to="/" className="link">
-              <FontAwesomeIcon icon={faChevronLeft} className="fontawesome" />
+              <FontAwesomeIcon
+                icon={faChevronLeft}
+                className="fontawesome"
+                onClick={onClickHandler}
+              />
             </Link>
           </li>
           <li className="center">
@@ -35,7 +42,7 @@ const Navbar = () => {
             />
           </li>
           <li className="rights">
-            <FontAwesomeIcon icon={faMicrophone} className="fontawesome" />
+            <Dictaphone />
             <FontAwesomeIcon icon={faGear} className="fontawesome" />
           </li>
         </ul>
