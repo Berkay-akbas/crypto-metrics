@@ -15,7 +15,7 @@
 
 For the live demo click [here](https://space-travelers-hub-microverse.netlify.app/)
 
-## Authors
+## Author
 
 👤 **Berkay Akbas**
 
