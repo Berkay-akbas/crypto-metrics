@@ -1,0 +1,25 @@
+.details-stats {
+  text-align: left;
+  width: 100%;
+  background-color: rgb(228, 151, 182);
+  color: #fff;
+  padding: 0.3rem 0 0.3rem 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5% 1rem 5%;
+  background-color: rgb(228, 151, 182);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.stat:nth-child(even) {
+  background-color: rgb(207, 67, 120);
+}
