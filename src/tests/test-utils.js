@@ -3,15 +3,13 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-// eslint-disable-next-line
-import { setupStore } from "./redux/configureStore";
+import { setupStore } from '../redux/configureStore';
 
 // eslint-disable-next-line import/prefer-default-export
 export function renderWithProviders(
   ui,
   {
     preloadedState = {},
-    // Automatically create a store instance if no store was passed in
     store = setupStore(preloadedState),
     ...renderOptions
   } = {},
@@ -24,6 +22,5 @@ export function renderWithProviders(
     );
   }
 
-  // Return an object with the store and all of RTL's query functions
   return { store, ...render(ui, { wrapper: Wrapper, ...renderOptions }) };
 }
