@@ -2,7 +2,9 @@
 @import url("http://fonts.cdnfonts.com/css/gill-sans");
 
 body {
-  background-color: rgb(252, 81, 147);
+  background-color: rgb(254, 65, 134);
+  max-width: 45rem;
+  margin: auto;
 }
 
 .coins-holder {
